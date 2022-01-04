@@ -10,7 +10,7 @@
 <body>
     <div id="header">
         <p id="title">another.page</p>
-        <p id ="subtitle">A tool to aid with writing progress notes</p>
+        <p id ="subtitle">An autosaving</p>
     </div>
 
     <div id="navbar">
@@ -22,21 +22,31 @@
     </div>
 
     <div>
-        <p id="current-note-title">current note</p>
-        <textarea id="current-note" placeholder="&#60------------ start typing"></textarea>
+        <p id="current-note-title" class ="hide">current note</p>
+        <p id="feedback"></p>
+        <textarea id="current-note" placeholder=
+        "Type or paste your note here
+
+Ctrl/&#8984 + A to select all
+Ctrl/&#8984 + X to cut
+Ctrl/&#8984 + V to paste
+Ctrl/&#8984 + S to manually save
+Ctrl/&#8984 + O to restore manual save
+
+Your note will be automatically saved"></textarea>
     </div>
 
-    <button id="save-button">Manual save</button>
-    <button id="restore-manual-button">Restore manual save</button>
+    <button id="save-button">Manual save (Ctrl/&#8984 + S)</button>
+    <button id="restore-manual-button">Restore manual save (Ctrl/&#8984 + O)</button>
 
-    <div class="temp">
+    <div class="hide">
         <p id="manually-saved-note-title">Manually saved note</p>
         <textarea readonly=true id="manually-saved-note"></textarea>
     </div>
 
-    <button id="clear-button">Clear history</button>
+    <button id="clear-button">Clear manual save</button>
 
-    <div class="temp">
+    <div class="hide">
         <p id="automatically-saved-note-title">Automatically saved note</p>
         <textarea readonly=true id="automatically-saved-note"></textarea>
     </div>
