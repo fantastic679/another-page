@@ -27,10 +27,11 @@
 }
 
 body {
-    max-width: 500px;
+    /* max-width: 500px; */
     text-align: center;
     background-color: pink;
     margin: auto;
+    /* padding: 10px; */
 }
 
 #title {
@@ -43,10 +44,13 @@ textarea {
     border-color: black;
     border-width: 2px;
     outline: none;
-    overflow: auto;
     background-color: white;
-    width: 100%;
+    width: 50em;
     height: 20em;
-    /* height: 100%; 
-    box-sizing: border-box; */
+    margin: 0px !important;
 }
+
+textarea::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 20em;
+ }
