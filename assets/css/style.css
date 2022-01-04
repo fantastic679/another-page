@@ -28,7 +28,7 @@
     margin-top: 0px;
 }
 
-#current-note-title, #saved-notes-title {
+#current-note-title, #manually-saved-note-title, #automatically-saved-note-title {
     font-family: "Major Mono Display";
     font-size: large;
     font-weight: bold;
@@ -55,7 +55,7 @@ textarea {
     /* overflow-y: scroll; */
 }
 
-#last-saved-note {
+#manually-saved-note, #automatically-saved-note {
     background-color: lightgray;
     color: darkgray;
 }

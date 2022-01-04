@@ -26,15 +26,20 @@
         <textarea id="current-note" placeholder="&#60------------ start typing"></textarea>
     </div>
 
-    <button id="save-button">Save</button>
-    <button id="restore-button">Restore</button>
+    <button id="save-button">Manual save</button>
+    <button id="restore-manual-button">Restore manual save</button>
 
-    <div id="temp">
-        <p id="saved-notes-title">saved notes</p>
-        <textarea readonly=true id="last-saved-note"></textarea>
+    <div class="temp">
+        <p id="manually-saved-note-title">Manually saved note</p>
+        <textarea readonly=true id="manually-saved-note"></textarea>
     </div>
 
     <button id="clear-button">Clear history</button>
+
+    <div class="temp">
+        <p id="automatically-saved-note-title">Automatically saved note</p>
+        <textarea readonly=true id="automatically-saved-note"></textarea>
+    </div>
 
     <p>Steven Phan 2022</p>
 
