@@ -37,6 +37,10 @@ Further functionality may be added in the future. Currently, the aim is to inclu
 
 To be included.
 
+## Specific issues to be resolved
+
+* Resizing the text area causes the margins to change? I am using `!important` to overcome this. However, I do not know the cause of this behaviour.
+
 ## Contact
 
 You can email me at stevenphan@msn.com.

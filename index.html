@@ -21,14 +21,23 @@
         <a href="#placeholder5">Link 5</a>
     </div>
 
-    <div id="current-note">
-        <p>Text area</p>
-        <textarea placeholder="Your note goes here"></textarea>
+    <div>
+        <p id="current-note-title">current note</p>
+        <textarea id="current-note" placeholder="&#60------------ start typing"></textarea>
     </div>
 
-    <div id="saved-notes">
-        <p>Saved notes</p>
+    <button id="save-button">Save</button>
+    <button id="restore-button">Restore</button>
+
+    <div id="temp">
+        <p id="saved-notes-title">saved notes</p>
+        <textarea readonly=true id="last-saved-note"></textarea>
     </div>
+
+    <button id="clear-button">Clear history</button>
+
+    <p>Steven Phan 2022</p>
+
 </body>
 
 <script src="assets/js/script.js"></script>

@@ -14,29 +14,31 @@
     font-weight: bold;
 }
 
+* {
+    font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+}
+
 #title {
     font-family: "Major Mono Display";
     margin-bottom: 0px;
+    font-size: large;
+    font-weight: bold;
 }
 #subtitle {
     margin-top: 0px;
 }
 
-* {
-    font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+#current-note-title, #saved-notes-title {
+    font-family: "Major Mono Display";
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 3px;
 }
 
 body {
-    /* max-width: 500px; */
-    text-align: center;
     background-color: pink;
     margin: auto;
-    /* padding: 10px; */
-}
-
-#title {
-    font-size: large;
-    font-weight: bold;
+    text-align: center;
 }
 
 textarea {
@@ -45,12 +47,27 @@ textarea {
     border-width: 2px;
     outline: none;
     background-color: white;
-    width: 50em;
+    width: 90vw;
     height: 20em;
+    /* margin is modified by browser when resizing text area?*/
     margin: 0px !important;
+    /* resize: vertical; */
+    /* overflow-y: scroll; */
 }
 
-textarea::-webkit-input-placeholder {
-    text-align: center;
-    line-height: 20em;
- }
+#last-saved-note {
+    background-color: lightgray;
+    color: darkgray;
+}
+
+button {
+    border-radius: 0px;
+    border-color: black;
+    border-width: 2px;
+    background-color: transparent;
+    outline: none;
+}
+
+#temp {
+    /* display: none; */
+}
